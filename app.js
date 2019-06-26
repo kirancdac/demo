@@ -14,6 +14,7 @@ var controller=function(request,response)
 {
 	response.writeHead(200,
 	                {"Content-Type" : "text/plain"});
+					response.write("<h1>hello  kiran</h1>");
 	                response.end( JSON.stringify(product));
 };
 var server=http.createServer(controller);
